@@ -32,10 +32,10 @@ app.get('/api/whoami', (req, res) => {
   res.json(data)
 })
 
-const dev_port = 3005
-// const prod_port = process.env.PORT
+// const dev_port = 3005
+const prod_port = process.env.PORT
 // listen for requests :)
 
-var listener = app.listen(dev_port, function () {
+var listener = app.listen(prod_port, function () {
   console.log(`Server listening on localhost:${dev_port}`);
 });
