@@ -37,5 +37,5 @@ const prod_port = process.env.PORT
 // listen for requests :)
 
 var listener = app.listen(prod_port, function () {
-  console.log(`Server listening on localhost:${dev_port}`);
+  console.log(`Server listening on localhost:${prod_port}`);
 });
